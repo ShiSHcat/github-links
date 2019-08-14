@@ -15,7 +15,7 @@ $r->get("USERNAME","REPO");
 Download [this](https://github.com/ShiSHcat/github-links/blob/master/JS.js) in your webserver
 include that from browser via html
 ## How to use (js)
-github_get_links("user","repo",skip_readme);
+`github_get_links("user","repo",skip_readme);`
 skip_readme: boolean if skip the readme
 
 ## node version is bugged i will fix later

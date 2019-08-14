@@ -1,4 +1,4 @@
-function github_get_links(user,repo,skip_readme) {
+module.exports = function (user,repo,skip_readme) {
 if (!fetch) {
 const fetch = require('node-fetch');
 }

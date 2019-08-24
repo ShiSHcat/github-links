@@ -1,7 +1,7 @@
 module.exports = function (user,repo,skip_readme) {
-if (!fetch) {
+
 const fetch = require('node-fetch');
-}
+
    return new Promise(function(resolve, reject) {
     fetch(`https://api.github.com/repos/${user}/${repo}/git/trees/master?recursive=1`)
     .catch(error => reject(Error(error)))

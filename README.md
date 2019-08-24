@@ -11,11 +11,15 @@ require [filename].php
 $r = new GithubLinks();
 $r->get("USERNAME","REPO");
 ```
+## How to use (nodejs)
+download [this](https://github.com/ShiSHcat/github-links/blob/master/node.js)
+use in your script with require
+example:
+`require("github-links")("ShiSHcat","test-repo").then(console.log);`
+
 ## Installation (js)
 Download [this](https://github.com/ShiSHcat/github-links/blob/master/JS.js) in your webserver
 include that from browser via html
 ## How to use (js)
-`github_get_links("user","repo",skip_readme);`
-skip_readme: boolean if skip the readme
+`github_get_links("user","repo");`
 
-## node version is bugged i will fix later

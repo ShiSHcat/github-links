@@ -1,0 +1,13 @@
+{
+  "name": "github-links",
+  "version": "1.0.0",
+  "description": "Easily get github download links from URL",
+  "main": "index.js",
+  "dependencies": {
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {},
+  "author": "ShiSHcat",
+  "license": "MIT"
+}

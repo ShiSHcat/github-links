@@ -25,7 +25,7 @@ function github_get_links(user,repo,skip_readme) {
         continue;
      }
      if (!s_p.includes("/")) {
-       link = encodeURI('https://raw.githubusercontent.com/'+user+'/'+repo+'/master/'+s_p);
+         link = encodeURI('https://github.com/'+user+'/'+repo+.'/raw/master/'+s_p)
         result[s_p] = link;
         continue;
      }
@@ -34,7 +34,7 @@ function github_get_links(user,repo,skip_readme) {
      var dir = p_ar.join("/");
 
      
-     link = 'https://raw.githubusercontent.com/'+user+'/'+repo+'/master/'+s_p;
+    link = encodeURI('https://github.com/'+user+'/'+repo+.'/raw/master/'+s_p)
      result[dir][filename] = link
     
     }

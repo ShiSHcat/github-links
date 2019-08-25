@@ -28,7 +28,7 @@ const fetch = require('node-fetch');
         continue;
      }
      if (!s_p.includes("/")) {
-        link = 'https://raw.githubusercontent.com/'+user+'/'+repo+'/master/'+s_p;
+        link = encodeURI('https://raw.githubusercontent.com/'+user+'/'+repo+'/master/'+s_p);
         result[s_p] = link;
         continue;
      }

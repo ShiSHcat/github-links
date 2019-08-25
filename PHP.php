@@ -52,7 +52,9 @@ function get($user,$repo,$skip_readme=true)  {
             }
             $filename = array_pop($p_ar);
             $p = implode("/",$p_ar);
-          $link = 'https://github.com/'.$user.'/'.$repo.'/raw/master/'.$p;
+          $fs = urlencode($s_p);
+            $fs = str_replace("%2F","/",$fs);
+            $link = 'https://github.com/'.urlencode($user).'/'.urlencode($repo).'/raw/master/'.urlencode($s_p);
            if (strpos($s_p,"/") === false) {
             $return[$filename] = $link;
             continue;

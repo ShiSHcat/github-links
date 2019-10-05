@@ -54,6 +54,7 @@ function get($user,$repo,$skip_readme=true)  {
             $p = implode("/",$p_ar);
           $fs = urlencode($s_p);
             $fs = str_replace("%2F","/",$fs);
+            $fs = str_replace("+","%20",$fs);
             $link = 'https://github.com/'.urlencode($user).'/'.urlencode($repo).'/raw/master/'.$fs;
            if (strpos($s_p,"/") === false) {
             $return[$filename] = $link;

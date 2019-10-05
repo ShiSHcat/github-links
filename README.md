@@ -1,7 +1,7 @@
 # github-links
-Generates links from Github (PHP,JS) 
+Generates raw links from Github (PHP,JS) without git
 ## Installation (PHP)
-Copy [this](https://github.com/ShiSHcat/github-links/blob/master/PHP.php) to your erver and add this to your code
+Copy [this](https://github.com/ShiSHcat/github-links/blob/master/PHP.php) to your server and add this to your code
 ```php
 require [filename].php
 ``` 
